@@ -14,14 +14,16 @@ module SortableForRails
   class SortableTest < TestCase
     def setup 
       @klass = Class.new do
+        include Sortable
       end
     end
 
     def test_include_sortable_success 
-      @klass.instance_eval do 
-        include Sortable
-      end
-      assert @klass.method_defined?(:resort)
+      assert @klass.new.methods.include?(:resort)
     end 
+
+    def test_extend_class_method 
+      assert @klass.singleton_methods.include?(:sortable)
+    end
   end
 end
