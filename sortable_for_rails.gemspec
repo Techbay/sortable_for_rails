@@ -9,7 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["xiongbo"]
   spec.email         = ["xiongbo027@gmail.com"]
   spec.summary       = %q{make list sortable in rails}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = "https://github.com/Techbay/sortable_for_rails"
   spec.license       = "MIT"
 
@@ -23,5 +22,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "pry"
-  spec.add_development_dependency "minitest"
 end

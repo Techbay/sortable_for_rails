@@ -1,4 +1,6 @@
-module SortableForRails
-  class Sortable
+module SortableForRails 
+  module Sortable
+    def resort
+    end
   end
 end
