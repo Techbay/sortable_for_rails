@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-### In rails model
+### In Model
 
 ```ruby
 class SortableContentModel < ActiveRecord::Base
@@ -29,7 +29,15 @@ class SortableContentModel < ActiveRecord::Base
 end
 ```
 
-### require sortable js
+### Helper
+
+```ruby
+<%= table_sortable(model_object) do %>
+<% end %>
+
+<%= list_sortable(model_object) do %> 
+<% end %>
+``` 
 
 ### In the view
 
