@@ -1,14 +1,17 @@
 require 'active_support'
 
 module SortableForRails 
-  module Sortable
+  module Model
     extend ActiveSupport::Concern
-    def resort
-    end 
 
     module ClassMethods
       def sortable
       end
     end
+  end
+
+  module Controller
+    def resort
+    end 
   end
 end

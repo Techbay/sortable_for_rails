@@ -13,17 +13,20 @@ end
 module SortableForRails
   class SortableTest < TestCase
     def setup 
-      @klass = Class.new do
-        include Sortable
+      @model = Class.new do
+        include Model
+      end
+      @controller = Class.new do
+        include Controller
       end
     end
 
-    def test_include_sortable_success 
-      assert @klass.new.methods.include?(:resort)
+    def test_include_include_instance_methods
+      assert @controller.new.methods.include?(:resort)
     end 
 
-    def test_extend_class_method 
-      assert @klass.singleton_methods.include?(:sortable)
-    end
+    def test_extend_class_methods
+      assert @model.singleton_methods.include?(:sortable)
+    end 
   end
 end
