@@ -12,6 +12,11 @@ class SortableHelperTest < TestCase
     result = list_sortable do 
       "<li>a</li><li>b</li>"
     end
+    expected += <<JS
+<script type="text/javascript">
+  new SortableRails.ul();
+</script>
+JS
 
     assert_equal expected, result
   end
@@ -21,6 +26,11 @@ class SortableHelperTest < TestCase
     result = table_sortable do 
       "<tr><td></td></tr>"
     end
+    expected += <<JS
+<script type="text/javascript">
+  new SortableRails.table();
+</script>
+JS
 
     assert_equal expected, result
   end

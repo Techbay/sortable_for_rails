@@ -16,6 +16,13 @@ module SortableHelper
     html = "<#{node.to_s} class=\".sortable\">"
     html <<  yield(block)
     html << "</#{node.to_s}>" 
-    html
+
+    js = <<JS
+<script type="text/javascript">
+  new SortableRails.#{node.to_s}();
+</script>
+JS
+    html += js
+    html.respond_to?(:html_safe) ? html.html_safe : html
   end
 end
