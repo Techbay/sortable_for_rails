@@ -9,29 +9,27 @@ class SortableHelperTest < TestCase
 
   def test_list_sortable
     expected = %Q(<ul class=".sortable"><li>a</li><li>b</li></ul>)
-    result = list_sortable do 
+    result = list_sortable(:model) do 
       "<li>a</li><li>b</li>"
     end
     expected += <<JS
 <script type="text/javascript">
-  new SortableRails.ul();
+  SortableRails.ul();
 </script>
 JS
-
     assert_equal expected, result
   end
 
   def test_table_sortable
     expected = %Q(<table class=".sortable"><tr><td></td></tr></table>)
-    result = table_sortable do 
+    result = table_sortable(:model) do 
       "<tr><td></td></tr>"
     end
     expected += <<JS
 <script type="text/javascript">
-  new SortableRails.table();
+  SortableRails.table();
 </script>
 JS
-
     assert_equal expected, result
   end
 end

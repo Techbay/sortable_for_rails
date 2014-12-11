@@ -3,23 +3,23 @@ require 'json'
 require 'pry'
 
 module SortableHelper 
-  def list_sortable &block
-    sortable(:ul, &block)
+  def list_sortable(object, &block)
+    sortable(:ul, object, &block)
   end
 
-  def table_sortable &block
-    sortable(:table, &block)
+  def table_sortable(object, &block)
+    sortable(:table, object, &block)
   end
 
   private
-  def sortable(node, &block)
+  def sortable(node, object, &block)
     html = "<#{node.to_s} class=\".sortable\">"
     html <<  yield(block)
     html << "</#{node.to_s}>" 
 
     js = <<JS
 <script type="text/javascript">
-  new SortableRails.#{node.to_s}();
+  SortableRails.#{node.to_s}();
 </script>
 JS
     html += js

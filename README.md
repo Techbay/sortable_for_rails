@@ -41,6 +41,10 @@ end
 
 ### In the view
 
+## TODO
+
+* support for other js
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/sortable_for_rails/fork )
