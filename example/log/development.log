@@ -1762,3 +1762,1866 @@ ActionController::RoutingError (No route matches [POST] "/"):
 
   Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
   Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:00:20 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (1.0ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 1083ms (Views: 1067.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:00:21 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:00:44 +0800
+
+ActionController::RoutingError (uninitialized constant SortableRailsController):
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:01:59 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.6ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 226ms (Views: 207.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:02:00 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:02:05 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["2", "1", "3", "4", "5", "6", "7", "8", "9", "10"]}
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `klass' for #<SortableRailsController:0x007ffd29f23900>):
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:8:in `block in sortable'
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `each'
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `each_with_index'
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `sortable'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (34.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:08:09 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (1.0ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 498ms (Views: 491.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:08:09 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:08:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:08:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:10 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:10 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:10 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:08:15 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "5", "3", "4", "6", "7", "8", "9", "10"]}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `sortable'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:08:49 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:08:52 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "5", "3", "4", "6", "7", "8", "9", "10"]}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `sortable'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.7ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 79ms (Views: 76.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:04 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:09:08 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "6", "4", "5", "7", "8", "9", "10"]}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `sortable'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:09:42 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.7ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 427ms (Views: 424.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:09:43 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.8ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 173ms (Views: 158.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:11:45 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:11:52 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "5", "4", "6", "7", "8", "9", "10"]}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `upcase' for nil:NilClass):
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `sortable'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:12:32 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:12:33 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:13:58 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.5ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 430ms (Views: 428.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:13:58 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:13:58 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:13:58 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:13:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:13:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:13:59 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:13:59 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:13:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:13:59 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:14:04 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "6", "4", "5", "7", "8", "9", "10"], "model"=>"list"}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (Circular dependency detected while autoloading constant LIST):
+  activesupport (4.1.4) lib/active_support/dependencies.rb:478:in `load_missing_constant'
+  activesupport (4.1.4) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.4) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.4) lib/active_support/core_ext/string/inflections.rb:66:in `constantize'
+  /Users/ian/Dropbox/Project/sortable_for_rails/app/controllers/sortable_rails_controller.rb:7:in `sortable'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/ian/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (1.0ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 88ms (Views: 82.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:16:49 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:16:59 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "4", "7", "5", "6", "8", "9", "10"], "model"=>"list"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 0], ["updated_at", "2014-12-12 10:16:59.555911"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.4ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 1], ["updated_at", "2014-12-12 10:16:59.572533"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 2], ["updated_at", "2014-12-12 10:16:59.577321"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 3], ["updated_at", "2014-12-12 10:16:59.581018"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 4], ["updated_at", "2014-12-12 10:16:59.584699"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-12 10:16:59.588226"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 6], ["updated_at", "2014-12-12 10:16:59.591624"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 7], ["updated_at", "2014-12-12 10:16:59.596531"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 8], ["updated_at", "2014-12-12 10:16:59.600096"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 9], ["updated_at", "2014-12-12 10:16:59.603255"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 63ms (Views: 0.3ms | ActiveRecord: 20.7ms)
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:17:22 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "4", "7", "5", "6", "8", "10", "9"], "model"=>"list"}
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 0], ["updated_at", "2014-12-12 10:17:22.894990"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 1], ["updated_at", "2014-12-12 10:17:22.905845"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.4ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 2], ["updated_at", "2014-12-12 10:17:22.910667"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 3], ["updated_at", "2014-12-12 10:17:22.913794"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 4], ["updated_at", "2014-12-12 10:17:22.917032"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.5ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-12 10:17:22.921387"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 6], ["updated_at", "2014-12-12 10:17:22.925364"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 7], ["updated_at", "2014-12-12 10:17:22.929298"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 8], ["updated_at", "2014-12-12 10:17:22.932412"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-12 10:17:22.935447"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 47ms (Views: 0.2ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:25 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:17:30 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "4", "5", "6", "7", "8", "10", "9"], "model"=>"list"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1[0m  [["index", 0], ["updated_at", "2014-12-12 10:17:30.968656"]]
+  [1m[35m (8.1ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2[0m  [["index", 1], ["updated_at", "2014-12-12 10:17:30.980116"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3[0m  [["index", 2], ["updated_at", "2014-12-12 10:17:30.984792"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4[0m  [["index", 3], ["updated_at", "2014-12-12 10:17:30.989461"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5[0m  [["index", 4], ["updated_at", "2014-12-12 10:17:30.993505"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6[0m  [["index", 5], ["updated_at", "2014-12-12 10:17:30.997225"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7[0m  [["index", 6], ["updated_at", "2014-12-12 10:17:31.002157"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8[0m  [["index", 7], ["updated_at", "2014-12-12 10:17:31.008040"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10[0m  [["index", 8], ["updated_at", "2014-12-12 10:17:31.012667"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9[0m  [["index", 9], ["updated_at", "2014-12-12 10:17:31.017271"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 200 OK in 57ms (Views: 0.3ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:17:33 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:18:55 +0800
+Processing by ListsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/ian/Dropbox/Project/sortable_for_rails/example/app/models/list.rb:2: syntax error, unexpected ':', expecting keyword_end
+  default_scope: -> { order("index desc") }
+                ^):
+  app/models/list.rb:2: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/lists_controller.rb:7:in `index'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:19:03 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY index desc
+SQLite3::SQLException: near "index": syntax error: SELECT "lists".* FROM "lists"   ORDER BY index desc
+  Rendered lists/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (SQLite3::SQLException: near "index": syntax error: SELECT "lists".* FROM "lists"   ORDER BY index desc):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @lists.each do |list| %>
+    16:       <tr data-sortable-id=<%= list.id %>>
+    17:         <td><%= list.name %></td>
+    18:         <td><%= list.index %></td>
+  app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___4049001984261849758_70308379694340'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:29:47 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY index desc[0m
+SQLite3::SQLException: near "index": syntax error: SELECT "lists".* FROM "lists"   ORDER BY index desc
+  Rendered lists/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (SQLite3::SQLException: near "index": syntax error: SELECT "lists".* FROM "lists"   ORDER BY index desc):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @lists.each do |list| %>
+    16:       <tr data-sortable-id=<%= list.id %>>
+    17:         <td><%= list.name %></td>
+    18:         <td><%= list.index %></td>
+  app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___4049001984261849758_70308379694340'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" DESC
+  Rendered lists/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:30:59 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:31:20 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY index DESC[0m
+SQLite3::SQLException: near "index": syntax error: SELECT "lists".* FROM "lists"   ORDER BY index DESC
+  Rendered lists/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (SQLite3::SQLException: near "index": syntax error: SELECT "lists".* FROM "lists"   ORDER BY index DESC):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @lists.each do |list| %>
+    16:       <tr data-sortable-id=<%= list.id %>>
+    17:         <td><%= list.name %></td>
+    18:         <td><%= list.index %></td>
+  app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___4049001984261849758_70308379694340'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.4ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" DESC
+  Rendered lists/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:31:34 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:32:10 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["9", "8", "7", "6", "5", "10", "4", "3", "2", "1"], "model"=>"list"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9[0m  [["index", 0], ["updated_at", "2014-12-12 10:32:10.119670"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8[0m  [["index", 1], ["updated_at", "2014-12-12 10:32:10.123482"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7[0m  [["index", 2], ["updated_at", "2014-12-12 10:32:10.126703"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6[0m  [["index", 3], ["updated_at", "2014-12-12 10:32:10.129753"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5[0m  [["index", 4], ["updated_at", "2014-12-12 10:32:10.132925"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10[0m  [["index", 5], ["updated_at", "2014-12-12 10:32:10.136038"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4[0m  [["index", 6], ["updated_at", "2014-12-12 10:32:10.139378"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3[0m  [["index", 7], ["updated_at", "2014-12-12 10:32:10.143052"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2[0m  [["index", 8], ["updated_at", "2014-12-12 10:32:10.146558"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1[0m  [["index", 9], ["updated_at", "2014-12-12 10:32:10.149943"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 35ms (Views: 0.2ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" DESC[0m
+  Rendered lists/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:13 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:32:18 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["10", "1", "2", "3", "4", "5", "6", "7", "8", "9"], "model"=>"list"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 0], ["updated_at", "2014-12-12 10:32:18.762822"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.6ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 1], ["updated_at", "2014-12-12 10:32:18.775711"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 2], ["updated_at", "2014-12-12 10:32:18.780674"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 3], ["updated_at", "2014-12-12 10:32:18.784727"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 4], ["updated_at", "2014-12-12 10:32:18.788928"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-12 10:32:18.792181"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 6], ["updated_at", "2014-12-12 10:32:18.796039"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 7], ["updated_at", "2014-12-12 10:32:18.799143"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 8], ["updated_at", "2014-12-12 10:32:18.802309"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-12 10:32:18.806195"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 48ms (Views: 0.3ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" DESC
+  Rendered lists/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:22 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 74ms (Views: 71.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:47 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:32:49 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "10", "4", "5", "6", "7", "8", "9"], "model"=>"list"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 0], ["updated_at", "2014-12-12 10:32:49.520133"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 1], ["updated_at", "2014-12-12 10:32:49.532831"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 2], ["updated_at", "2014-12-12 10:32:49.538616"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 3], ["updated_at", "2014-12-12 10:32:49.542567"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 4], ["updated_at", "2014-12-12 10:32:49.546431"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-12 10:32:49.549833"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 6], ["updated_at", "2014-12-12 10:32:49.553135"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 7], ["updated_at", "2014-12-12 10:32:49.556602"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 8], ["updated_at", "2014-12-12 10:32:49.559469"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-12 10:32:49.562491"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 47ms (Views: 0.3ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:32:51 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:33:00 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "2", "3", "4", "5", "10", "6", "7", "8", "9"], "model"=>"list"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1[0m  [["index", 0], ["updated_at", "2014-12-12 10:33:00.668755"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2[0m  [["index", 1], ["updated_at", "2014-12-12 10:33:00.681138"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3[0m  [["index", 2], ["updated_at", "2014-12-12 10:33:00.685796"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4[0m  [["index", 3], ["updated_at", "2014-12-12 10:33:00.689687"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5[0m  [["index", 4], ["updated_at", "2014-12-12 10:33:00.693910"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10[0m  [["index", 5], ["updated_at", "2014-12-12 10:33:00.697303"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6[0m  [["index", 6], ["updated_at", "2014-12-12 10:33:00.700424"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7[0m  [["index", 7], ["updated_at", "2014-12-12 10:33:00.703354"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8[0m  [["index", 8], ["updated_at", "2014-12-12 10:33:00.706493"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9[0m  [["index", 9], ["updated_at", "2014-12-12 10:33:00.709687"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 46ms (Views: 0.2ms | ActiveRecord: 20.9ms)
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:33:02 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["6", "1", "2", "3", "4", "5", "10", "7", "8", "9"], "model"=>"list"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6[0m  [["index", 0], ["updated_at", "2014-12-12 10:33:02.634717"]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1[0m  [["index", 1], ["updated_at", "2014-12-12 10:33:02.647556"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2[0m  [["index", 2], ["updated_at", "2014-12-12 10:33:02.652174"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3[0m  [["index", 3], ["updated_at", "2014-12-12 10:33:02.655846"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4[0m  [["index", 4], ["updated_at", "2014-12-12 10:33:02.660076"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5[0m  [["index", 5], ["updated_at", "2014-12-12 10:33:02.663476"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10[0m  [["index", 6], ["updated_at", "2014-12-12 10:33:02.666842"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7[0m  [["index", 7], ["updated_at", "2014-12-12 10:33:02.669766"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8[0m  [["index", 8], ["updated_at", "2014-12-12 10:33:02.672859"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9[0m  [["index", 9], ["updated_at", "2014-12-12 10:33:02.675845"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 200 OK in 45ms (Views: 0.2ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-12 18:33:05 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:35:03 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["1", "6", "2", "3", "4", "5", "10", "7", "8", "9"], "model"=>"list"}
+  [1m[35mList Load (0.1ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 0], ["updated_at", "2014-12-12 10:35:03.262447"]]
+  [1m[36m (7.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 1], ["updated_at", "2014-12-12 10:35:03.272959"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 2], ["updated_at", "2014-12-12 10:35:03.276250"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 3], ["updated_at", "2014-12-12 10:35:03.279415"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 4], ["updated_at", "2014-12-12 10:35:03.282719"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-12 10:35:03.286085"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 6], ["updated_at", "2014-12-12 10:35:03.289206"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 7], ["updated_at", "2014-12-12 10:35:03.292228"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 8], ["updated_at", "2014-12-12 10:35:03.295407"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-12 10:35:03.298613"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 46ms (Views: 0.3ms | ActiveRecord: 19.7ms)
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:35:04 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["6", "1", "2", "3", "4", "5", "10", "7", "8", "9"], "model"=>"list"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 0], ["updated_at", "2014-12-12 10:35:04.913243"]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.4ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 1], ["updated_at", "2014-12-12 10:35:04.926532"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.5ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 2], ["updated_at", "2014-12-12 10:35:04.932139"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 3], ["updated_at", "2014-12-12 10:35:04.936173"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 4], ["updated_at", "2014-12-12 10:35:04.939736"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-12 10:35:04.942899"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.7ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 6], ["updated_at", "2014-12-12 10:35:04.946804"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 7], ["updated_at", "2014-12-12 10:35:04.949810"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 8], ["updated_at", "2014-12-12 10:35:04.952974"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-12 10:35:04.956421"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 22.4ms)
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-12 18:35:07 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["3", "6", "1", "2", "4", "5", "10", "7", "8", "9"], "model"=>"list"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 0], ["updated_at", "2014-12-12 10:35:07.012982"]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 1], ["updated_at", "2014-12-12 10:35:07.025922"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 2], ["updated_at", "2014-12-12 10:35:07.030602"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 3], ["updated_at", "2014-12-12 10:35:07.034647"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 4], ["updated_at", "2014-12-12 10:35:07.038578"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-12 10:35:07.041593"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 6], ["updated_at", "2014-12-12 10:35:07.045597"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 7], ["updated_at", "2014-12-12 10:35:07.048987"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 8], ["updated_at", "2014-12-12 10:35:07.053082"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-12 10:35:07.056613"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 21.9ms)

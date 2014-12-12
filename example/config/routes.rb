@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root "lists#index"
+  post "sortable" => "sortable_rails#sortable"
   resources :lists
 
   # The priority is based upon order of creation: first created -> highest priority.

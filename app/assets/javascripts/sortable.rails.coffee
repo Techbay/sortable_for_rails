@@ -20,7 +20,12 @@ class SortableRails
 
   @tableSortable: (item, url, options)-> 
     colspan = item.find("tr").length
-    url = item.data("url")
+    table = item.parent("table")
+    idField = table.data("sortable-id-field")
+    sortBy = table.data("sortable-sort-by")
+    model = table.data("sortable-model")
+    console.log(model)
+    url = item.data("url") or "sortable"
 
     options = $.extend({
       forcePlaceholderSize: true,
@@ -40,7 +45,7 @@ class SortableRails
 
       $.ajax
         url: url
-        data: {ids: ary}
+        data: {ids: ary, id_field: idField, sort_by: sortBy, model: model}
         type: "POST"
         success: (d) ->
           console.log(d.result)
