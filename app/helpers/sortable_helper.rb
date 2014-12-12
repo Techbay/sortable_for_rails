@@ -1,6 +1,5 @@
 require 'erb'
 require 'json'
-require 'pry'
 
 module SortableHelper 
   def list_sortable(object, &block)

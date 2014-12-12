@@ -6,39 +6,43 @@ browserIsCompatible = ->
 return unless browserIsCompatible()
 
 class SortableRails
-  @sortable: (item, options) -> 
+  @sortable: (item, url, options) -> 
+    console.log(item)
     item = $(item)
     type = item.prop("tagName") 
+    console.log(type)
     switch type
-      when "ul" then ulSortable(item, options)
-      when "table" then tableSortable(item, options)
+      when "UL" then @ulSortable(item, url, options)
+      when "TBODY" then @tableSortable(item, url, options)
 
-  @ulSortable: (item, options)->
+  @ulSortable: (item, url, options)->
     console.log("ul sort")
 
-  @tableSortable: (item, options)-> 
-    console.log("table sort")
-    colspan = item.find(tr).length
+  @tableSortable: (item, url, options)-> 
+    colspan = item.find("tr").length
     url = item.data("url")
 
-    default_options = {
+    options = $.extend({
       forcePlaceholderSize: true,
       items: "tr",
       placeholder: '<tr><td colspan="#{colspan}">&nbsp;</td></tr>'
-    }
+    }, options)
+    console.log(options)
 
     item
-    .sortable(default_options) 
+    .sortable(options) 
     .bind 'sortupdate', ->
       ary = []
-      $(this).find("tr").each (el, index) ->
-        feature_id = $(this).data("feature-id")
-        console.log(index)
+      $(this).find("tr").each (index, el) ->
+        feature_id = $(this).data("sortable-id")
         ary.push(feature_id)
+      console.log(ary)
 
       $.ajax
-        url: "/chadmin/channel_widgets/resort"
+        url: url
         data: {ids: ary}
         type: "POST"
         success: (d) ->
           console.log(d.result)
+
+window.SortableRails = SortableRails

@@ -41,6 +41,13 @@ end
 
 ### In the view
 
+## Example
+
+```ruby
+rake db:migrate
+rake db:seed
+```
+
 ## TODO
 
 * support for other js

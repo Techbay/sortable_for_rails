@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'ffaker'
+
+lorem = Faker::Lorem
+10.times do
+  List.create!(
+    name: lorem.sentence,
+    content: lorem.paragraph
+  ) 
+end
