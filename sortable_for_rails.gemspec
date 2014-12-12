@@ -6,8 +6,8 @@ require 'sortable_for_rails/version'
 Gem::Specification.new do |spec|
   spec.name          = "sortable_for_rails"
   spec.version       = SortableForRails::VERSION
-  spec.authors       = ["xiongbo"]
-  spec.email         = ["xiongbo027@gmail.com"]
+  spec.authors       = ["xiongbo", "caok"]
+  spec.email         = ["xiongbo027@gmail.com", "caok1231@gmail.com"]
   spec.summary       = %q{make list sortable in rails}
   spec.homepage      = "https://github.com/Techbay/sortable_for_rails"
   spec.license       = "MIT"
