@@ -1,4 +1,29 @@
 <h1>Listing lists</h1>
+<%= table_sortable :list do %>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Index</th>
+      <th>Sortable</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr data-sortable-id=<%= list.id %>>
+        <td><%= list.name %></td>
+        <td><%= list.index %></td>
+        <td><%= list.sortable_id %></td>
+        <td><%= list.content %></td>
+        <td><%= link_to 'Show', list %></td>
+        <td><%= link_to 'Edit', edit_list_path(list) %></td>
+        <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+<% end %>
 
 <table class="sortable" data-sortable-model="list">
   <thead>

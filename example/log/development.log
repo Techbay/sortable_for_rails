@@ -3625,3 +3625,1108 @@ Processing by SortableRailsController#sortable as */*
   [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-12 10:35:07.056613"]]
   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
 Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 09:45:12 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (1.6ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 923ms (Views: 877.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 09:45:13 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:43:17 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListsController#index as HTML
+  Rendered lists/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2)):
+    1: <h1>Listing lists</h1>
+    2: <%= table_sortable :list do %>
+    3:   <thead>
+    4:     <tr>
+    5:       <th>Name</th>
+  app/views/lists/index.html.erb:2:in `_app_views_lists_index_html_erb___3759185479907149657_70295939582280'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.8ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 213ms (Views: 209.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 19:45:28 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (1.0ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 100ms (Views: 93.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 19:46:07 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:48:33 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.7ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007fde1922ebe8>):
+    1: <h1>Listing lists</h1>
+    2: <%= table_sortable :list do %>
+    3:   <thead>
+    4:     <tr>
+    5:       <th>Name</th>
+  app/views/lists/index.html.erb:2:in `_app_views_lists_index_html_erb___3759185479907149657_70295939582280'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:49:20 +0800
+
+LoadError (No such file to load -- pry):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/lists_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:50:02 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007fde15b7d0b8>):
+    1: <h1>Listing lists</h1>
+    2: <%= table_sortable :list do %>
+    3:   <thead>
+    4:     <tr>
+    5:       <th>Name</th>
+  app/views/lists/index.html.erb:2:in `_app_views_lists_index_html_erb___3759185479907149657_70295939582280'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:50:21 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007fde1933a910>):
+    1: <h1>Listing lists</h1>
+    2: <%= table_sortable :list do %>
+    3:   <thead>
+    4:     <tr>
+    5:       <th>Name</th>
+  app/views/lists/index.html.erb:2:in `_app_views_lists_index_html_erb___3759185479907149657_70295939582280'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:51:22 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (93289.1ms)
+Completed 200 OK in 93449ms (Views: 93435.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 19:52:56 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:54:52 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (51260.2ms)
+Completed 200 OK in 51359ms (Views: 51355.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 19:55:43 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 19:55:44 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 19:57:32 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.7ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (368068.3ms)
+Completed 200 OK in 368153ms (Views: 368148.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:03:40 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:03:45 +0800
+Processing by ListsController#index as HTML
+  Rendered lists/index.html.erb within layouts/application (5349.2ms)
+Completed 500 Internal Server Error in 5360ms
+
+ActionView::Template::Error (no block given (yield)):
+    1: <h1>Listing lists</h1>
+    2: <%= raw table_sortable :list do %>
+    3:   <thead>
+    4:     <tr>
+    5:       <th>Name</th>
+  app/views/lists/index.html.erb:2:in `_app_views_lists_index_html_erb__1234058865346589852_70115104463180'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:04:28 +0800
+Processing by ListsController#index as HTML
+  Rendered lists/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (no block given (yield)):
+    1: <h1>Listing lists</h1>
+    2: <%= raw table_sortable :list do %>
+    3:   <thead>
+    4:     <tr>
+    5:       <th>Name</th>
+  app/views/lists/index.html.erb:2:in `_app_views_lists_index_html_erb__1234058865346589852_70115104463180'
+
+
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/ian/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:04:39 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:04:40 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:08:10 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 115ms (Views: 113.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:08:54 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:16:09 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.4ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 70ms (Views: 66.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:16:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:06 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:19:17 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.6ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 77ms (Views: 72.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:18 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:19:27 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:23:47 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.5ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 74ms (Views: 70.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:23:48 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:33:46 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:33:47 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (1.2ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 83ms (Views: 78.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:34:09 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.4ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 78ms (Views: 75.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:38:31 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 69ms (Views: 66.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:39:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.5ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 20:40:29 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 83ms (Views: 79.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:22 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-13 21:36:44 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["6", "1", "2", "3", "4", "5", "10", "7", "8", "9"], "id_field"=>"id", "sort_by"=>"index", "model"=>"List"}
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 0], ["updated_at", "2014-12-13 13:36:44.560754"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 1], ["updated_at", "2014-12-13 13:36:44.575534"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 2], ["updated_at", "2014-12-13 13:36:44.578849"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 3], ["updated_at", "2014-12-13 13:36:44.582593"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 4], ["updated_at", "2014-12-13 13:36:44.585987"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 5], ["updated_at", "2014-12-13 13:36:44.589659"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 6], ["updated_at", "2014-12-13 13:36:44.593308"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 7], ["updated_at", "2014-12-13 13:36:44.597245"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 8], ["updated_at", "2014-12-13 13:36:44.600908"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-13 13:36:44.605317"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 63ms (Views: 0.4ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 21:36:52 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.4ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 80ms (Views: 78.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 21:36:53 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-13 21:36:59 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["6", "1", "4", "2", "3", "5", "10", "7", "8", "9"], "id_field"=>"id", "sort_by"=>"index", "model"=>"List"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6[0m  [["index", 0], ["updated_at", "2014-12-13 13:36:59.390289"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1[0m  [["index", 1], ["updated_at", "2014-12-13 13:36:59.400856"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4[0m  [["index", 2], ["updated_at", "2014-12-13 13:36:59.404858"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2[0m  [["index", 3], ["updated_at", "2014-12-13 13:36:59.408180"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3[0m  [["index", 4], ["updated_at", "2014-12-13 13:36:59.411597"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5[0m  [["index", 5], ["updated_at", "2014-12-13 13:36:59.416053"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10[0m  [["index", 6], ["updated_at", "2014-12-13 13:36:59.419228"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7[0m  [["index", 7], ["updated_at", "2014-12-13 13:36:59.422470"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8[0m  [["index", 8], ["updated_at", "2014-12-13 13:36:59.426449"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9[0m  [["index", 9], ["updated_at", "2014-12-13 13:36:59.429688"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 52ms (Views: 0.3ms | ActiveRecord: 20.0ms)
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-13 21:37:04 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["6", "1", "7", "4", "2", "3", "5", "10", "8", "9"], "id_field"=>"id", "sort_by"=>"index", "model"=>"List"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6[0m  [["index", 0], ["updated_at", "2014-12-13 13:37:04.673695"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1[0m  [["index", 1], ["updated_at", "2014-12-13 13:37:04.685895"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7[0m  [["index", 2], ["updated_at", "2014-12-13 13:37:04.690549"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4[0m  [["index", 3], ["updated_at", "2014-12-13 13:37:04.694776"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2[0m  [["index", 4], ["updated_at", "2014-12-13 13:37:04.698900"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3[0m  [["index", 5], ["updated_at", "2014-12-13 13:37:04.702345"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5[0m  [["index", 6], ["updated_at", "2014-12-13 13:37:04.705766"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10[0m  [["index", 7], ["updated_at", "2014-12-13 13:37:04.709085"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8[0m  [["index", 8], ["updated_at", "2014-12-13 13:37:04.714021"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9[0m  [["index", 9], ["updated_at", "2014-12-13 13:37:04.718753"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 50ms (Views: 0.2ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC[0m
+  Rendered lists/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 63ms (Views: 62.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 21:37:07 +0800
+
+
+Started POST "/sortable" for 127.0.0.1 at 2014-12-13 22:15:52 +0800
+Processing by SortableRailsController#sortable as */*
+  Parameters: {"ids"=>["6", "7", "4", "1", "2", "3", "5", "10", "8", "9"], "model"=>"list"}
+  [1m[35mList Load (0.7ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 6  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 6  [["index", 0], ["updated_at", "2014-12-13 14:15:52.621587"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 7  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 7  [["index", 1], ["updated_at", "2014-12-13 14:15:52.626893"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 4  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 4  [["index", 2], ["updated_at", "2014-12-13 14:15:52.629864"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.1ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 1  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 1  [["index", 3], ["updated_at", "2014-12-13 14:15:52.632834"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 2  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 2  [["index", 4], ["updated_at", "2014-12-13 14:15:52.636375"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 3  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 3  [["index", 5], ["updated_at", "2014-12-13 14:15:52.639601"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 5  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 5  [["index", 6], ["updated_at", "2014-12-13 14:15:52.642777"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 10  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 10  [["index", 7], ["updated_at", "2014-12-13 14:15:52.646409"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 8  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 8  [["index", 8], ["updated_at", "2014-12-13 14:15:52.649919"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  WHERE "lists"."id" = 9  ORDER BY "lists"."index" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "lists" SET "index" = ?, "updated_at" = ? WHERE "lists"."id" = 9  [["index", 9], ["updated_at", "2014-12-13 14:15:52.653305"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.4ms)[0m  SELECT "lists".* FROM "lists"   ORDER BY "lists"."index" ASC
+  Rendered lists/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/lists.css?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/html.sortable.js?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800
+
+
+Started GET "/assets/sortable.rails.js?body=1" for 127.0.0.1 at 2014-12-13 22:15:56 +0800

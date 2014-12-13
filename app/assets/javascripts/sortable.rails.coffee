@@ -17,6 +17,7 @@ class SortableRails
 
   @ulSortable: (item, url, options)->
     console.log("ul sort")
+    colspan = item.find("li").length
 
   @tableSortable: (item, url, options)-> 
     colspan = item.find("tr").length

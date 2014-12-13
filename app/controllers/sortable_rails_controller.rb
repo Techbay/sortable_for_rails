@@ -9,7 +9,9 @@ class SortableRailsController < ApplicationController
     ids_ary.each_with_index do |id, index| 
       klass.find_by(id_field => id).update(sort_by => index)
     end
-    render :json => {result: "success"} 
+    render :json => { status: "success" } 
+  rescue e
+    render :json => { status: "fail", message: e.message }
   end
 
 end
