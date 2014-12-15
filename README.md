@@ -21,32 +21,71 @@ Or install it yourself as:
 
 ## Usage
 
-### In Model
-
-```ruby
-class SortableContentModel < ActiveRecord::Base
-  sortable :id, with: :index
-end
-```
+The simplest way to make your list sortable is use helper.
 
 ### Helper
 
 ```ruby
-<%= table_sortable(model_object) do %>
+# :list is your model type.
+# you can either use symbol or string 
+<%= table_sortable(:list) do %>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Index</th>
+      <th>Sortable</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr data-sortable-id=<%= list.id %>>
+        <td><%= list.name %></td>
+        <td><%= list.index %></td>
+        <td><%= list.sortable_id %></td>
+        <td><%= list.content %></td>
+        <td><%= link_to 'Show', list %></td>
+        <td><%= link_to 'Edit', edit_list_path(list) %></td>
+        <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
 <% end %>
 
-<%= list_sortable(model_object) do %> 
+<%= list_sortable(:list) do %> 
 <% end %>
 ``` 
 
-### In the view
+### Options:
 
-## Example
+We expected your model has an :id and :index attribute as our default options.
+eg:
 
 ```ruby
-rake db:migrate
-rake db:seed
+{
+  id: "sortable_rails",
+  data: {
+    sortable_id_field: "id",  # the identity field that to find your record
+    sortable_sort_by: "index" # the index to order by with
+  }
+}
 ```
+
+But you can change that with your own set
+
+### Javascript API
+
+You can also use Javascript API to make your list sortable manully.
+
+We use htmlSortablejs as our default sortable javascript library, so you can choose to use javascript api instead of helper inorder to have more choise to config your list.
+
+```javascript
+  SortableRails.sortable(".sortable tbody", "");
+```
+
+Find more example in example :) 
 
 ## TODO
 
