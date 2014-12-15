@@ -25,7 +25,7 @@
   </tbody>
 <% end %>
 
-<table class="sortable" data-sortable-model="list">
+<table class="sortable" data-sortable-model="list" data-sortable-id-field="id" data-sortable-sort-by="index">
   <thead>
     <tr>
       <th>Name</th>
@@ -57,6 +57,6 @@
 
 <script>
   $(function(){
-    SortableRails.sortable(".sortable tbody", "");
+    SortableRails.sortable(".sortable tbody");
   })
 </script>

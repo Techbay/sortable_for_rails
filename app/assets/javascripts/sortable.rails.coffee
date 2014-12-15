@@ -6,27 +6,27 @@ browserIsCompatible = ->
 return unless browserIsCompatible()
 
 class SortableRails
-  @sortable: (item, url, options) -> 
+  @sortable: (item, options) -> 
     console.log(item)
     item = $(item)
     type = item.prop("tagName") 
     console.log(type)
     switch type
-      when "UL" then @ulSortable(item, url, options)
-      when "TBODY" then @tableSortable(item, url, options)
+      when "UL" then @ulSortable(item, options)
+      when "TBODY" then @tableSortable(item, options)
 
-  @ulSortable: (item, url, options)->
+  @ulSortable: (item, options)->
     console.log("ul sort")
     colspan = item.find("li").length
 
-  @tableSortable: (item, url, options)-> 
+  @tableSortable: (item, options)-> 
     colspan = item.find("tr").length
     table = item.parent("table")
     idField = table.data("sortable-id-field")
     sortBy = table.data("sortable-sort-by")
     model = table.data("sortable-model")
     console.log(model)
-    url = item.data("url") or "sortable"
+    url = item.data("sortable-url") or "sortable"
 
     options = $.extend({
       forcePlaceholderSize: true,

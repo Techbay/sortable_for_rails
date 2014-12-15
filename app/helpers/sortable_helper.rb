@@ -12,29 +12,31 @@ module SortableHelper
 
   private
   def sortable(node, object, options, &block)
-    url = 'sortable' 
-    options = if options.nil?
-                {
-                  id: "sortable_rails",
+    id = "sortable_rails_#{SecureRandom.hex(8)}"
+    default_options = {
+                  id: id,
                   data: {
                   sortable_id_field: "id", 
                   sortable_sort_by: "index",
-                  sortable_model: object.to_s.camelize}
-                }
-              else
-                options.deep_merge!(id: "sortable_rails")
-              end
+                  sortable_sort_url: "sortable",
+                  sortable_model: object.to_s.camelize} }
 
+    options = if options.nil?
+                default_options
+              else
+                default_options.deep_merge!(options)
+              end
     html = content_tag(node, nil, options, &block) 
+
     item = if node == "table"
-             "#sortable_rails tbody"
+             "##{options[:id]} tbody"
            else
-             "#sortable_rails"
+             "##{options[:id]}"
            end 
 
     js = <<JS
 <script type="text/javascript">
-  SortableRails.sortable("#{item}", "sortable");
+  SortableRails.sortable("#{item}");
 </script>
 JS
     html += raw(js)

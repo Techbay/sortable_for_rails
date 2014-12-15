@@ -23,6 +23,12 @@ Or install it yourself as:
 
 The simplest way to make your list sortable is use helper.
 
+### Migrate
+
+```ruby
+rails g migration add_index_to_model index:integer
+```
+
 ### Helper
 
 ```ruby
@@ -58,14 +64,21 @@ The simplest way to make your list sortable is use helper.
 <% end %>
 ``` 
 
+### Routes
+
+You should amount the route below in your routes.rb file
+
+```ruby
+post "sortable" => "sortable_rails#sortable"
+```
+
 ### Options:
 
-We expected your model has an :id and :index attribute as our default options.
-eg:
+We expected your model has an :id and :index attribute as our default options, which map to `sortable_id_field` and `sortable_sort_by` as below:
 
 ```ruby
 {
-  id: "sortable_rails",
+  id: "sortable_rails", # the identity attribute of which list you want to sort
   data: {
     sortable_id_field: "id",  # the identity field that to find your record
     sortable_sort_by: "index" # the index to order by with
@@ -73,7 +86,9 @@ eg:
 }
 ```
 
-But you can change that with your own set
+If you don't provide an id option, we will generate a random id for your list
+
+Also you can change that with your own set 
 
 ### Javascript API
 
@@ -82,13 +97,22 @@ You can also use Javascript API to make your list sortable manully.
 We use htmlSortablejs as our default sortable javascript library, so you can choose to use javascript api instead of helper inorder to have more choise to config your list.
 
 ```javascript
-  SortableRails.sortable(".sortable tbody", "");
+  SortableRails.sortable(".sortable tbody", options);
 ```
+
+If you choose to use javascript api, you should manually add some options to your node, eg:
+
+```html
+<table class="sortable" data-sortable-model="list" data-sortable-id-field="id" data-sortable-sort-by="index"> 
+```
+
+And, you can use [html5Sortable](https://github.com/voidberg/html5sortable)'s options to config sortable behavior.
 
 Find more example in example :) 
 
 ## TODO
 
+* add test
 * support for other js
 
 ## Contributing
