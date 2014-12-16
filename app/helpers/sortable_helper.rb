@@ -2,7 +2,7 @@ require 'erb'
 require 'json'
 
 module SortableHelper 
-  def list_sortable(object, options = nil, &block)
+  def ul_sortable(object, options = nil, &block)
     sortable("ul", object, options, &block)
   end
 
@@ -35,8 +35,10 @@ module SortableHelper
            end 
 
     js = <<JS
-<script type="text/javascript">
-  SortableRails.sortable("#{item}");
+<script type="text/javascript"> 
+  $(function(){
+    SortableRails.sortable("#{item}");
+  })
 </script>
 JS
     html += raw(js)

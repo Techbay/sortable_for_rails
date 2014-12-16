@@ -6,49 +6,56 @@ browserIsCompatible = ->
 return unless browserIsCompatible()
 
 class SortableRails
-  @sortable: (item, options) -> 
-    console.log(item)
-    item = $(item)
-    type = item.prop("tagName") 
-    console.log(type)
+  @sortable: (list, options) -> 
+    list = $(list)
+    type = list.prop("tagName") 
     switch type
-      when "UL" then @ulSortable(item, options)
-      when "TBODY" then @tableSortable(item, options)
+      when "UL" then @ulSortable(list, options)
+      when "TBODY" then @tableSortable(list, options)
 
-  @ulSortable: (item, options)->
-    console.log("ul sort")
-    colspan = item.find("li").length
+  @ulSortable: (list, options)->
+    colspan = list.find("li").length
+    idField = list.data("sortable-id-field")
+    sortBy = list.data("sortable-sort-by")
+    model = list.data("sortable-model")
 
-  @tableSortable: (item, options)-> 
-    colspan = item.find("tr").length
-    table = item.parent("table")
+    options = $.extend({
+      forcePlaceholderSize: true,
+      items: "li",
+      placeholder: '<li>&nbsp;</li>'
+    }, options)
+    dataField = {id_field: idField, sort_by: sortBy, model: model}
+    updateSort(list, options, dataField)
+
+  @tableSortable: (list, options)-> 
+    colspan = list.children("tr").first().find("td").length
+    table = list.parent("table")
     idField = table.data("sortable-id-field")
     sortBy = table.data("sortable-sort-by")
     model = table.data("sortable-model")
-    console.log(model)
-    url = item.data("sortable-url") or "sortable"
 
     options = $.extend({
       forcePlaceholderSize: true,
       items: "tr",
       placeholder: '<tr><td colspan="#{colspan}">&nbsp;</td></tr>'
     }, options)
-    console.log(options)
+    dataField = {id_field: idField, sort_by: sortBy, model: model}
+    updateSort(list, options, dataField)
 
-    item
+  updateSort = (list, options, dataField)-> 
+    list
     .sortable(options) 
     .bind 'sortupdate', ->
       ary = []
-      $(this).find("tr").each (index, el) ->
+      $(this).children().each (index, el) ->
         feature_id = $(this).data("sortable-id")
         ary.push(feature_id)
-      console.log(ary)
 
       $.ajax
-        url: url
-        data: {ids: ary, id_field: idField, sort_by: sortBy, model: model}
+        url: 'sortable'
+        data: $.extend({ids: ary}, dataField)
         type: "POST"
         success: (d) ->
-          console.log(d.result)
+          console.log(d.status)
 
 window.SortableRails = SortableRails
