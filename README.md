@@ -77,13 +77,14 @@ post "sortable" => "sortable_rails#sortable"
 We expected your model has an :id and :index attribute as our default options, which map to `sortable_id_field` and `sortable_sort_by` as below:
 
 ```ruby
-{
-  id: "sortable_rails", # the identity attribute of which list you want to sort
-  data: {
-    sortable_id_field: "id",  # the identity field that to find your record
-    sortable_sort_by: "index" # the index to order by with
-  }
-}
+<%= table_sortable(
+  :list, 
+  id: "sortable_rails", # the identity attribute of which list you want to sort 
+  data: { 
+    sortable_id_field: "id", # the identity field that to find your record
+    sortable_sort_by: "index") # the index to order by with
+  } 
+%>
 ```
 
 If you don't provide an id option, we will generate a random id for your list
