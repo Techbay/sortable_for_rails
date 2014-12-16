@@ -1,6 +1,6 @@
 # SortableForRails 
 
-Make lists(like table, ul..) can sort by drag and drop.
+Make lists(like table, ul..) can easily sort by drag and drop.
 Auto update order when finished sorting.
 
 ## Installation
@@ -26,7 +26,13 @@ The simplest way to make your list sortable is use helper.
 ### Migrate
 
 ```ruby
-rails g migration add_index_to_model index:integer
+rails g migration add_index_to_model
+class AddIndexToModel
+  def change
+    add_column :lists, :index, :integer
+  end
+end 
+rake db:migrate
 ```
 
 ### Helper
